@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Chung cư Test",
+    "lat": 10.7626,
+    "lng": 106.6609,
+    "type": "residence",
+    "source": "manual",
+    "category": "residential_building"
+  },
+  {
+    "name": "Trường Tiểu học 1",
+    "lat": 10.7627,
+    "lng": 106.661,
+    "type": "school",
+    "source": "manual",
+    "category": "elementary_school"
+  },
+  {
+    "name": "Trường Tiểu học 2",
+    "lat": 10.7628,
+    "lng": 106.6612,
+    "type": "school",
+    "source": "manual",
+    "category": "school"
+  },
+  {
+    "name": "Bệnh viện Phổi Test",
+    "lat": 10.763,
+    "lng": 106.6607,
+    "type": "hospital",
+    "source": "manual",
+    "category": "hospital"
+  },
+  {
+    "name": "Trường Xa",
+    "lat": 10.8,
+    "lng": 106.7,
+    "type": "school",
+    "source": "manual",
+    "category": "school"
+  }
+]

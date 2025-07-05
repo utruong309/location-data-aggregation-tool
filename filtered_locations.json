@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Chung cư Test",
+    "lat": 10.7626,
+    "lng": 106.6609,
+    "type": "residence",
+    "source": "manual",
+    "category": "residential_building"
+  }
+]
