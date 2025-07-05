@@ -16,9 +16,8 @@ async function main() {
 
     const filtered = filterByNearbyCriteria( //to be updated
       labeledData,
-      'residential_building',
+      'school',
       [
-        { category: 'school', minCount: 2 },
         { category: 'hospital', minCount: 1 }
       ]
     );
@@ -26,7 +25,7 @@ async function main() {
     fs.writeFileSync('filtered_locations.json', JSON.stringify(filtered, null, 2));
     console.log('Successfully put filtered data to filtered_locations.json');
   } catch (error) {
-    console.error('Error:', error);
+    console.error('Error:', error); 
   }
   
 }
