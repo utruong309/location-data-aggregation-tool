@@ -1,12 +1,12 @@
 <locations>
   <location>
-    <name>Trường Tiểu học ABC</name>
+    <name>Trường Tiểu học Quan Hoa</name>
     <lat>10.762622</lat>
     <lng>106.660172</lng>
     <type>school</type>
   </location>
   <location>
-    <name>Bệnh viện XYZ</name>
+    <name>Bệnh viện Phổi Trung Ương</name>
     <lat>10.768123</lat>
     <lng>106.664321</lng>
     <type>hospital</type>
