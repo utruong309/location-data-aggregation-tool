@@ -1,42 +1,178 @@
 [
   {
-    "name": "Chung cư Test",
-    "lat": 10.7626,
-    "lng": 106.6609,
-    "type": "residence",
-    "source": "manual",
-    "category": "residential_building"
+    "name": "Chu Van An Secondary School",
+    "lat": 10.7622836,
+    "lng": 106.6503006,
+    "type": "school",
+    "source": "google",
+    "category": "other"
   },
   {
-    "name": "Trường Tiểu học 1",
-    "lat": 10.7627,
-    "lng": 106.661,
+    "name": "The western australian international school system",
+    "lat": 10.7839323,
+    "lng": 106.6844669,
     "type": "school",
-    "source": "manual",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "Vietnamese American school system",
+    "lat": 10.7648717,
+    "lng": 106.6426155,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "Vietnam Australia International School",
+    "lat": 10.7659044,
+    "lng": 106.6632,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "Tran Van Quang Secondary School",
+    "lat": 10.7841365,
+    "lng": 106.6495767,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "Bamboo Tân Phú",
+    "lat": 10.7650796,
+    "lng": 106.6348577,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "Hoang Mai 1 Nursery School",
+    "lat": 10.737629,
+    "lng": 106.6765241,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "AN DUONG VUONG FOREIGN LANGUAGES AND COMPUTING SCHOOL",
+    "lat": 10.7572673,
+    "lng": 106.6719311,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "ME SCHOOL Tân Định - Trường Mầm Non Quận 3",
+    "lat": 10.7902011,
+    "lng": 106.6881867,
+    "type": "school",
+    "source": "google",
+    "category": "school"
+  },
+  {
+    "name": "Dien Hong Secondary School - High School",
+    "lat": 10.7705474,
+    "lng": 106.6654687,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "MindX Technology School (3 Tháng 2)",
+    "lat": 10.7652588,
+    "lng": 106.6622756,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "Trường TiH-THCS Hồng Ngọc (Ruby School) - CS1",
+    "lat": 10.7634722,
+    "lng": 106.6342819,
+    "type": "school",
+    "source": "google",
+    "category": "middle_school"
+  },
+  {
+    "name": "Van An Nursery School",
+    "lat": 10.7725272,
+    "lng": 106.664965,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "Tran Van Dang Secondary School",
+    "lat": 10.7868148,
+    "lng": 106.6594974,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "MindX Technology School (Hải Thượng Lãn Ông)",
+    "lat": 10.7506082,
+    "lng": 106.662478,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "Intermediate School Mekong",
+    "lat": 10.7520065,
+    "lng": 106.6710624,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "Nguyen Thi Minh Khai High School",
+    "lat": 10.77926,
+    "lng": 106.6869808,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "Ly Thanh Tong Secondary School",
+    "lat": 10.7482946,
+    "lng": 106.6737282,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "Nguyen Dinh Chieu Blind School",
+    "lat": 10.7603269,
+    "lng": 106.6701989,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "MindX Technology School (Lạc Long Quân)",
+    "lat": 10.7739916,
+    "lng": 106.6476447,
+    "type": "school",
+    "source": "google",
+    "category": "other"
+  },
+  {
+    "name": "Trường Tiểu học ABC",
+    "lat": 10.762622,
+    "lng": 106.660172,
+    "type": "school",
+    "source": "xml",
     "category": "elementary_school"
   },
   {
-    "name": "Trường Tiểu học 2",
-    "lat": 10.7628,
-    "lng": 106.6612,
-    "type": "school",
-    "source": "manual",
-    "category": "school"
-  },
-  {
-    "name": "Bệnh viện Phổi Test",
-    "lat": 10.763,
-    "lng": 106.6607,
+    "name": "Bệnh viện XYZ",
+    "lat": 10.768123,
+    "lng": 106.664321,
     "type": "hospital",
-    "source": "manual",
+    "source": "xml",
     "category": "hospital"
-  },
-  {
-    "name": "Trường Xa",
-    "lat": 10.8,
-    "lng": 106.7,
-    "type": "school",
-    "source": "manual",
-    "category": "school"
   }
 ]
