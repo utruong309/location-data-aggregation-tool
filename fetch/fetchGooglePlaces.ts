@@ -4,10 +4,10 @@ import dotenv from 'dotenv';
 dotenv.config(); 
 
 export async function fetchGooglePlaces( 
-    keyword: string, 
+    keyword: string, //search term (e.g., school, hospital, etc.)
     lat: number, 
     lng: number, 
-    radius = 3000
+    radius: number = 3000 //how far to search, default = 3km
 ) {
     const apiKey = process.env.GOOGLE_API_KEY; 
     const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=${radius}&keyword=${keyword}&key=${apiKey}`;

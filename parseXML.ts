@@ -2,8 +2,17 @@ import fs from 'fs';
 import { parseStringPromise } from 'xml2js';
 
 export async function parseXMLFile(filePath: string) {
-  const xmlData = fs.readFileSync(filePath, 'utf-8');
-  const result = await parseStringPromise(xmlData);
-  // Extract fields like name, lat, lng from result
-  return result;
+  const xml = fs.readFileSync(filePath, 'utf-8');
+  const result = await parseStringPromise(xml);
+
+  // Example: assume structure is <locations><location><name>...</name><lat>...</lat><lng>...</lng></location></locations>
+  const locations = result.locations.location.map((loc: any) => ({
+    name: loc.name[0],
+    lat: parseFloat(loc.lat[0]),
+    lng: parseFloat(loc.lng[0]),
+    type: loc.type ? loc.type[0] : 'unknown',
+    source: 'xml'
+  }));
+
+  return locations;
 }
