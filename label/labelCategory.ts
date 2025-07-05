@@ -13,3 +13,10 @@ export function labelCategory(name: string): string {
   
     return 'other';
 }
+
+export function applyLabeling(locations: any[]): any[] {
+    return locations.map(location => ({
+      ...location,
+      category: labelCategory(location.name || '')
+    }));
+  }

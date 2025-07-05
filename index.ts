@@ -1,6 +1,7 @@
 import { fetchGooglePlaces } from './fetch/fetchGooglePlaces';
 import { parseXMLFile } from './parseXML';
 import fs from 'fs';
+import { applyLabeling } from './label/labelCategory'; 
 
 async function main() {
   try {
@@ -10,7 +11,9 @@ async function main() {
 
     const combined = [...googleData, ...xmlData];
 
-    fs.writeFileSync('.locations.json', JSON.stringify(combined, null, 2));
+    const labeled = applyLabeling(combined);
+
+    fs.writeFileSync('.locations.json', JSON.stringify(labeled, null, 2));
     console.log('Log combined location data in locations.json');
   } catch (error) {
     console.error('Error:', error);
