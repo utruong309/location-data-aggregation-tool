@@ -1,27 +1,28 @@
-import axios from 'axios'; 
-import dotenv from 'dotenv'; 
+import axios from 'axios';
+import dotenv from 'dotenv';
+dotenv.config();
 
-dotenv.config(); 
-
-export async function fetchGooglePlaces( 
-    keyword: string, //search term (e.g., school, hospital, etc.)
-    lat: number, 
-    lng: number, 
-    radius: number = 3000 //how far to search, default = 3km
+export async function fetchGooglePlaces(
+  keyword: string,
+  lat: number,
+  lng: number,
+  radius: number = 3000
 ) {
-    const apiKey = process.env.GOOGLE_API_KEY; 
-    const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=${radius}&keyword=${keyword}&key=${apiKey}`;
-    
-    const response = await axios.get(url); 
-    const results = response.data.results; //results is default property
+  const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json`;
+  const response = await axios.get(url, {
+    params: {
+      key: process.env.GOOGLE_API_KEY,
+      location: `${lat},${lng}`,
+      radius,
+      keyword
+    }
+  });
 
-    return results.map((place: any) => ({
-        name: place.name,
-        lat: place.geometry.location.lat,
-        lng: place.geometry.location.lng,
-        address: place.vicinity,
-        place_id: place.place_id,
-        types: place.types,
-        source: 'google',
-      }));  
+  return response.data.results.map((place: any) => ({
+    name: place.name,
+    lat: place.geometry.location.lat,
+    lng: place.geometry.location.lng,
+    type: keyword,
+    source: 'google'
+  }));
 }

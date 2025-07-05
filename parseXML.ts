@@ -5,7 +5,7 @@ export async function parseXMLFile(filePath: string) {
   const xml = fs.readFileSync(filePath, 'utf-8');
   const result = await parseStringPromise(xml);
 
-  // Example: assume structure is <locations><location><name>...</name><lat>...</lat><lng>...</lng></location></locations>
+  //structure is <locations><location><name>...</name><lat>...</lat><lng>...</lng></location></locations>
   const locations = result.locations.location.map((loc: any) => ({
     name: loc.name[0],
     lat: parseFloat(loc.lat[0]),
