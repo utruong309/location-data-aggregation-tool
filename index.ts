@@ -25,7 +25,7 @@ async function main() {
     fs.writeFileSync('filtered_locations.json', JSON.stringify(filtered, null, 2));
     console.log('Successfully put filtered data to filtered_locations.json');
   } catch (error) {
-    console.error('Error:', error); 
+    console.error('Error:', error);
   }
   
 }
